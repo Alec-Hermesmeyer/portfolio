@@ -11,11 +11,13 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 70px;
     width: 100%;
     color: white;
-    background-color: darkblue;
-    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(163,0,8,1) 50%, rgba(254,239,0,0.9934348739495799) 64%, rgba(208,96,0,1) 75%, rgba(255,187,162,0.9850315126050421) 89%, rgba(255,187,162,0.9850315126050421) 90%);
+
+/*Still working on to find the color scheme to fit with the banner*/
 }
 .navbarContainer{
     display: flex;
@@ -44,17 +46,11 @@ body{
     
 
 }
-.fa-solid{
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    padding-top: 5px;
-    padding-bottom: -10px;
-}
+
 .slider{
     background-color: yellow;
     width: 100%;
-    height: 700px;
+    height: 1100px;
 }
 .sliderWrapper{
     display: flex;
@@ -64,5 +60,19 @@ body{
 .sliderItem{
     width: 100vw;
     height: 100%;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    height: 400px;
+    width: 100%;
+    border: 3px solid white;
+}
+.bannerImg{
+    height: 400px;
+    width: 100%;
+    object-fit: fill;
 }
 
