@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body{
+    margin-top: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+    
+}
+.navbarContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.left{
+    margin-left: -75px;
+}
+
+
+.navLinks{
+    list-style: none;
+    display: flex;
+}
+.navLink{
+    font-family: 'Catamaran', sans-serif;
+    margin-right: 14px;
+    cursor: pointer;
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.fa-solid{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: -10px;
+}
+.slider{
+    background-color: yellow;
+    width: 100%;
+    height: 700px;
+}
+.sliderWrapper{
+    display: flex;
+    width: 300vw;
+    height: 100%;
+}
+.sliderItem{
+    width: 100vw;
+    height: 100%;
+}
+
