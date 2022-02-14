@@ -1,78 +1,32 @@
 *{
     margin: 0;
+    font-family: 'Amatic SC', cursive;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Catamaran', sans-serif;
+    font-family: 'Indie Flower', cursive;
+}
+html{
+    scroll-behavior: smooth;
+    
 }
 
 body{
     margin-top: 0;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    height: 70px;
+.verticalSlider{
+    height: 400vh;
     width: 100%;
-    color: white;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(163,0,8,1) 50%, rgba(254,239,0,0.9934348739495799) 64%, rgba(208,96,0,1) 75%, rgba(255,187,162,0.9850315126050421) 89%, rgba(255,187,162,0.9850315126050421) 90%);
-
-/*Still working on to find the color scheme to fit with the banner*/
 }
-.navbarContainer{
+.landing{
     display: flex;
-    justify-content: space-evenly;
+    height: 100%;
     width: 100%;
-    align-items: center;
-}
-.left{
-    margin-left: -75px;
+   
 }
 
-
-.navLinks{
-    list-style: none;
-    display: flex;
-}
-.navLink{
-    font-family: 'Catamaran', sans-serif;
-    margin-right: 14px;
-    cursor: pointer;
+.landingVideo{
+    height: 100%;
+    width: 100%;
     
 }
-.right{
-    display: flex;
-    flex-direction: column;
-    
-
-}
-
-.slider{
-    background-color: yellow;
-    width: 100%;
-    height: 1100px;
-}
-.sliderWrapper{
-    display: flex;
-    width: 300vw;
-    height: 100%;
-}
-.sliderItem{
-    width: 100vw;
-    height: 100%;
-}
-.home{
-    display: flex;
-    flex-direction: column;
-}
-.banner{
-    height: 400px;
-    width: 100%;
-    border: 3px solid white;
-}
-.bannerImg{
-    height: 400px;
-    width: 100%;
-    object-fit: fill;
-}
-
