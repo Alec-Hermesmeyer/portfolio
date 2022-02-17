@@ -28,6 +28,8 @@ body{
     height: 40px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     flex: 3;
@@ -56,6 +58,8 @@ body{
     list-style: none;
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     background-color: black;
     color: white;
@@ -98,7 +102,12 @@ body{
 .sliderItems:nth-child(3){
     height: 100vh;
     width: 100%;
-    background-color: blue;
+    background-color: white;
+}
+.sliderItems:nth-child(4){
+    height: 100vh;
+    width: 100%;
+    background-color: white;
 }
 .landing{
     display: flex;
@@ -139,10 +148,9 @@ body{
     left: 375px;
     color: white;
     animation: flash;
-    animation-duration: 4s;
+    animation-duration: 10s;
     cursor: pointer;
     font-size: 40px;
-    --animate-infinite: infinite;
     text-decoration: none;
 }
 .projects{
@@ -160,7 +168,20 @@ body{
     color: black;
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     
+}
+.aboutUs{
+    padding-top: 40px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.aboutSub{
+    font-family: 'Catamaran', sans-serif;
+}
+.aboutHead{
+    font-family: 'Catamaran', sans-serif;
 }
   a:link {
     text-decoration: none;
