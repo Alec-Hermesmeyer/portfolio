@@ -13,34 +13,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Catamaran:wght@600;700;800;900&family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
 </head>
 
 <body>
+    
    <nav>
        <div class="navContainer">
-           <div class="navLeft">${.Hooligan}</div>
+           <a href="/"><div id="navLink" class="navLeft">${.Hooligan}</div></a>
            <div class="navMiddle">_______</div>
            <div class="navRight">
                <ul class="navLinks">
-                   <li class="navLink">Projects</li>
-                   <li class="navLink">About Us</li>
-                   <li class="navLink">Contact</li>
+                   <a href="#landing"><li id="navLink" class="navLink">Home</li></a>
+                   <a href="#projects"><li id="navLink" class="navLink">Projects</li></a>
+                  <a href="#aboutUs"><li id="navLink" class="navLink">About Us</li></a>
+                   <a href="#contact"><li id="navLink" class="navLink">Contact</li></a>
                </ul>
            </div>
        </div>
     </nav>
-    <div class="verticalSlider">
-        <div class="sliderWrapper">
+    <!--Slider will move horizontal rather than vertically, keeping it simple stupid-->
+    <div class="verticalSlider" id="verticalSlider">
+        <div class="sliderWrapper" id="sliderWrapper">
             <div class="sliderItems">
                 <div class="landing" id="landing">
-                    <video autoplay muted loop src="img/background.mp4" type ="video/mp4"class="landingVideo"></video>
-                    <h2 class="landingDesc">Hooligan Designs</h2>
-                    <h1 class="landingTitle">I'm a Freelancer bringing you programming and designs from the future</h1>
+                    <span class="landingDesc">
+                        <h2 class="landingGreeting">${.Hooligan} Designs</h2>
+                        <h1 class="landingTitle">Freelancer Offering a full range of options for your web presence</h1>
+                        <a href="#projects"><h2 class="animate__animated animate_flash animate_infinite" id="landingGreeting">Please Explore My World!</h2></a>
+                    </span>
                 </div>
             </div>
-            <div class="sliderItems"></div>
-            <div class="sliderItems"></div>
+            <div class="sliderItems">
+                <div class="projects" id="projects">
+                    <a href="https://github.com/Alec-Hermesmeyer"><button class="projectBtn">Explore</button></a>
+                    
+                </div>
+            </div>
+            <div class="sliderItems">
+                <div class="aboutUs" id="aboutUs">
+                    <h2 class="aboutSub"></h2>
+                    <h1 class="aboutHead"></h1>
+                    <h2 class="aboutSub2"></h2>
+                </div>
+            </div>
+            <div class="sliderItems">
+                <div class="contact" id="contact"></div>
+            </div>
         </div>
     </div>
     
