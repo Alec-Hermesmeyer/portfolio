@@ -6,6 +6,7 @@
     font-family: 'Indie Flower', cursive;
     overflow: hidden;
     
+    
 }
 html{
     scroll-behavior: smooth;
@@ -112,7 +113,10 @@ body{
 .landing{
     display: flex;
     height: 100vh;
-    background-image: url(img/bg.jpeg);
+}
+.bgImg{
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -127,8 +131,8 @@ body{
 .landingGreeting{
     font-family: 'Bebas Neue', cursive;
     position: relative;
-    top: 100px;
-    left: 15px;
+    top: 10%;
+    left: 2%;
     color: white;
     font-size: 40px;
 }
@@ -136,52 +140,173 @@ body{
 .landingTitle{
     font-family: 'Bebas Neue', cursive;
     position: relative;
-    left: 15px;
-    top: 115px;
+    top: 10%;
+    left: 2%;
     font-size: 50px;
     color: white;
 }
 #landingGreeting{
     font-family: 'Bebas Neue', cursive;
     position: relative;
-    top: 170px;
-    left: 375px;
-    color: white;
-    animation: flash;
-    animation-duration: 10s;
+    left: 35%;
+    top: 25%;
     cursor: pointer;
     font-size: 40px;
     text-decoration: none;
-}
-.projects{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: purple;
-    align-items: center;
-    justify-content: center
-
-}
-.projectBtn{
-    height: 60px;
-    width: 160px;
-    color: black;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    
+    
     
 }
+.neonText{
+    color: rgb(255, 77, 216);
+    transition: 1.5s ease-in-out;
+    background-color: transparent;
+    
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.projectContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    position: absolute;
+}
+.projectLeft{
+    flex: 1;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 30%, 100% 74%, 0 100%);
+}
+.projectImg{
+    width: 100%;
+    height: 100%;
+    
+}
+.middleImg{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.projectMiddle{
+    flex: 1;
+    background-color: rgb(255, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 74%);
+
+}
+.extras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectBtn{
+    height: 30px;
+    width: 130px;
+    color: #000;
+    background-color: rgb(255, 221, 221);
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.projectText{
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    top: 30%;
+}
+
+.projectRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 30%, 100% 74%, 0 100%);
+    
+}
+.projectText{
+    font-family: 'Bebas Neue', cursive;
+    margin-right: 5%;
+    font-size: 30px;
+}
+#projLink{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+}
 .aboutUs{
-    padding-top: 40px;
-    font-family: 'Catamaran', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(255, 221, 221);
+}
+.aboutUsContainer{
+    display: flex;
+    flex: 3;
+}
+.aboutLeft{
+    flex: 1.5;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+
+}
+.aboutImg{
+    height: 100vh;
+    width: 100%;
+    
+
+}
+.aboutRight{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutSub{
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    padding-bottom: 20px;
+    text-align: center;
 }
 .aboutHead{
     font-family: 'Catamaran', sans-serif;
+    color: transparent;
+    padding-bottom: 20px;
+    font-size: 45px;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+    text-align: center;
+}
+.aboutHead:hover{
+    color: black;
+}
+
+.aboutBtn{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
+    margin-left: 35%;
+    height: 30px;
+    width: 170px;
+    background-color: rgb(80, 252, 80);
+    color: black;
 }
   a:link {
     text-decoration: none;
@@ -192,9 +317,11 @@ body{
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:active {
     text-decoration: underline;
   }
+
+  

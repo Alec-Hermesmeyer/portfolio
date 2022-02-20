@@ -11,59 +11,104 @@
     <title>[.Hooligan}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Catamaran:wght@600;700;800;900&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Catamaran:wght@600;700;800;900&family=Indie+Flower&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
-    
-   <nav>
-       <div class="navContainer">
-           <a href="/"><div id="navLink" class="navLeft">${.Hooligan}</div></a>
-           <div class="navMiddle"></div>
-           <div class="navRight">
-               <ul class="navLinks">
-                   <a href="#landing"><li id="navLink" class="navLink">Home</li></a>
-                   <a href="#projects"><li id="navLink" class="navLink">Projects</li></a>
-                  <a href="#aboutUs"><li id="navLink" class="navLink">About Us</li></a>
-                   <a href="#contact"><li id="navLink" class="navLink">Contact</li></a>
-               </ul>
-           </div>
-       </div>
+
+    <nav>
+        <div class="navContainer">
+            <a href="/">
+                <div id="navLink" class="navLeft">${.Hooligan}</div>
+            </a>
+            <div class="navMiddle"></div>
+            <div class="navRight">
+                <ul class="navLinks">
+                    <a href="#landing">
+                        <li id="navLink" class="navLink">Home</li>
+                    </a>
+                    <a href="#projects">
+                        <li id="navLink" class="navLink">Projects</li>
+                    </a>
+                    <a href="#aboutUs">
+                        <li id="navLink" class="navLink">About Us</li>
+                    </a>
+                    <a href="#contact">
+                        <li id="navLink" class="navLink">Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--Slider will move horizontal rather than vertically, keeping it simple stupid-->
     <div class="verticalSlider" id="verticalSlider">
         <div class="sliderWrapper" id="sliderWrapper">
             <div class="sliderItems">
                 <div class="landing" id="landing">
+                    <img src="img/bg.jpeg" alt="" class="bgImg">
                     <span class="landingDesc">
                         <h2 class="landingGreeting">${.Hooligan} Designs</h2>
                         <h1 class="landingTitle">Freelancer Offering a full range of options for your web presence</h1>
-                        <a href="#projects"><h2 class="animate__animated animate_flash animate__infinite" id="landingGreeting">Please Explore My World!</h2></a>
+                        <a href="#projects">
+                            <h2 class="neonText" id="landingGreeting">Please Explore My World!</h2>
+                        </a>
+
                     </span>
+
                 </div>
             </div>
             <div class="sliderItems">
                 <div class="projects" id="projects">
-                    <a href="https://github.com/Alec-Hermesmeyer"><button class="projectBtn">Check out the projects!</button></a>
-                    
+                    <div class="projectContainer">
+
+
+
+
+
+
+                    </div>
                 </div>
             </div>
             <div class="sliderItems">
                 <div class="aboutUs" id="aboutUs">
-                    <h2 class="aboutSub">We've sailed the high seas</h2>
-                    <h1 class="aboutHead">Now we are here help you surf the web!</h1>
-                    <h2 class="aboutSub">Hop on and lets ride this wave together!</h2>
+                    <div class="aboutUsContainer">
+                        <div class="aboutLeft">
+                            <figure>
+                                <img src="img/palmtree.jpeg" alt="" class="aboutImg">
+                            </figure>
+                        </div>
+                        <div class="aboutRight">
+                            <span>
+                                <h2 class="aboutSub">We've sailed the high seas</h2>
+                                <h1 class="aboutHead">NOW WE ARE HERE TO HELP YOU SURF THE WEB</h1>
+                                <h2 class="aboutSub">Hop on and lets ride this wave together</h2>
+                                <button class="aboutBtn">Let's Connect</button>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sliderItems">
-                <div class="contact" id="contact"></div>
+                <div class="contact" id="contact">
+                    <div class="contactContainer">
+                        <a>
+                            <div class="arrowUp"></div>
+                            <div class="arrowDown"></div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="app.js" async defer></script>
 </body>
 
